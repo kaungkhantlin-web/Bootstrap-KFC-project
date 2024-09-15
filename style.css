@@ -1,0 +1,335 @@
+:root {
+    --font: serif;
+    --bgcolor:rgb(247, 242, 236);
+}
+body{
+    scroll-behavior: smooth;
+    background-color: var(--bgcolor);
+}
+h1,h2,h3,h4,h5,h6,a{
+    font-family: var(--font);
+}
+
+/* Nav Start */
+.kfc-logo {
+    width: 50px;
+}
+.navbar-brand{
+    letter-spacing: 3px;
+    font-family:var(--font);
+}
+.nav-item{
+    position: relative;
+}
+.nav-item a{
+    font-family: var(--font);
+    position: relative;
+    transition: all 0.4s;
+    color: white;
+}
+@media screen and (min-width: 992px) {
+    .nav-item a::before{
+        content: "";
+        position: absolute;
+        background-color: black;
+        width: 0%;
+        left: 6px;
+        bottom: 5px;
+        height: 2px;
+        transition: 0.5s;
+    }
+    .nav-item a:hover::before{
+        width: 90%;
+    }
+}
+/* Nav End */
+
+/* Header start */
+.header-text{
+    font-family: var(--font);
+}
+.head-play:hover{
+    transform: scale(1.3);
+}
+.head-play{
+    transition: 0.5s;
+}
+@media screen and (min-width: 992px) {
+    .header-container{
+        height: 90vh;
+    }
+}
+/* Header End */
+
+/* Section start */
+.card{
+    cursor: pointer;
+    transition: 0.4s;
+}
+.card:hover{
+    border: 1px solid red;
+    box-shadow: 0 0 7px 0 gray;
+    transform: scale(0.9);
+}
+/* Section End */
+
+/* About start */
+.about-text{
+    text-align:justify ;
+}
+@media screen and (min-width: 1400px) {
+    .about-image{
+        height: 780px !important;
+    }
+}
+/* About End */
+
+/* Event Start */
+@media screen and (min-width: 350px) {
+    .eventImage {
+        height: 220px;
+    }
+}
+@media screen and (min-width: 400px) {
+    .eventImage {
+        height: 250px;
+    }
+}
+@media screen and (min-width: 500px) {
+    .eventImage {
+        height: 300px;
+    }
+}
+@media screen and (min-width: 500px) {
+    .eventImage {
+        height: 300px;
+    }
+}
+@media screen and (min-width: 576px) {
+    .eventImage {
+        height: 330px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .eventImage {
+        height: 400px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .eventImage {
+        height: 480px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .eventImage {
+        height: 560px;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .eventImage {
+        height: 620px;
+    }
+}
+/* Event End */
+
+/* Gallery start */
+.mainImage img {
+    width: 400px;
+    height: 300px;
+}
+.imgArrow {
+   position: relative;
+   bottom: 170px;
+   width: 480px;
+}
+.prevArr, .nextArr {
+    color: red;
+    transition: 0.4s;
+    cursor: pointer;
+}
+ .next{
+   float: right;    
+}
+.nextArr:hover,.prevArr:hover{
+    transform: scale(1.3);
+    color: blue;
+}
+.smallImage img{
+    display: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.smallImage img:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 7px 0 gray;
+}
+
+@media screen and (max-width:450px) {
+  
+    .mainImage img {
+        width: 500px;
+        height: 250px;
+    }
+    .imgArrow {
+       bottom: 140px;
+     }
+}
+@media screen and (min-width:768px)  {
+    .smallImage img {
+        display: block;
+        height: 70px;
+    }
+    .mainImage img {
+        width: 500px;
+    }
+    .imgArrow {
+        width: 580px;
+        bottom: 160px;
+     }
+}
+@media screen and (min-width:992px) {
+    .smallImage img {
+        height: 80px;
+    }
+    .mainImage img {
+        width: 600px;
+    }
+    .imgArrow {
+        width: 680px;
+     }
+}
+@media screen and (min-width:1200px) {
+    .smallImage img {
+        height: 90px;
+    }
+    .mainImage img {
+        width: 800px;
+        height: 450px;
+    }
+    .imgArrow {
+        width: 880px;
+        bottom: 230px;
+     }
+}
+@media screen and (min-width:1400px) {
+    .smallImage img {
+        height: 90px;
+    }
+    .mainImage img {
+        width: 900px;
+        height: 500px;
+    }
+    .imgArrow {
+        width: 980px;
+        bottom: 240px;
+     }
+}
+/* Gallery End */
+
+/* Contact Start */
+.contactDiv{
+    background-color: var(--bgcolor);
+    transition: 0.5s ease-in-out;
+    color: black;
+}
+
+.contactDiv:hover{
+    transform: scale(0.9);
+    border: 1px solid gray;
+    background-color: rgb(255, 0, 0,0.8);
+}
+/* Contact End */
+
+/* Footer Start */
+.footerImg1{
+    width: 70%;
+    display: none;
+}
+.footerImg2 {
+    width: 20%;
+}
+@media screen and (min-width: 992px) {
+    .footerImg2{
+        display: none;
+    }
+    .footerImg1{
+        display: block;
+    }
+}
+@media screen and (min-width: 1200px) {
+   
+    .footerImg1{
+        width: 60%;
+    }
+}
+@media screen and (min-width: 1400px) {
+   
+    .footerImg1{
+        width: 50%;
+    }
+}
+/* Footer End */
+
+/* Preloader Start */
+#preloader{
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    background-color: white;
+    z-index: 99999;
+    width: 100%;
+    height: 100vh;
+    transition: 0.8s;
+}
+#preloader::before, #preloader::after{
+    content: "";
+    position: absolute;
+    border: 3px  solid red;
+    border-radius: 50%;
+    animation: animate-preloader 1s cubic-bezier(0, 0.2 , 0.4, 0.4) infinite;
+}
+#preloader::after{
+    animation-delay: -1s;
+}
+@keyframes animate-preloader {
+    0%{
+        width: 10px;
+        height: 10px;
+        top: calc(50% - 5px);
+        left: calc(50% - 5px);
+        opacity: 1;
+    }
+    100% {
+        width: 100px;
+        height: 100px;
+        top: calc(50% - 50px);
+        left: calc(50% - 50px);
+        opacity: 0;
+    }
+}
+/* Preloader End */
+
+/* Scroll up Start */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 15px; /* Place the button at the bottom of the page */
+    right: 15px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #555; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    transition: 0.5s;
+  }
+  
+  #myBtn:hover {
+    background-color: red; /* Add a dark-grey background on hover */
+    transform: translate(0px, -20px);
+  }
+  
+/* Scroll Up End */
