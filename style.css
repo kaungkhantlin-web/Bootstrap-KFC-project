@@ -286,10 +286,10 @@ h1,h2,h3,h4,h5,h6,a{
     position: absolute;
     border: 3px  solid red;
     border-radius: 50%;
-    animation: animate-preloader 1s cubic-bezier(0, 0.2 , 0.4, 0.4) infinite;
+    animation: animate-preloader 2s cubic-bezier(0.5, 0.5 , 0.5, 0.5) infinite;
 }
 #preloader::after{
-    animation-delay: -1s;
+    animation-delay: 2s;
 }
 @keyframes animate-preloader {
     0%{
